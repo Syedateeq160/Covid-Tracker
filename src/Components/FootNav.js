@@ -12,18 +12,20 @@ export default function FootNav(screenConfig) {
   console.log(screenConfig)
 
   return (
-    <Box sx={{ position:'absolute',
-    bottom:0,
-    right:0,
-    left:0.
+    <Box sx={{
+      position: 'fixed',
+      bottom: 0,
+      right: 0,
+      width: '100%',
+      left: 0,
 
-    
+
     }}>
       <BottomNavigation
         showLabels
         value={screenConfig[0]}
         onChange={(event, newValue) => {
-    
+
           setValue(newValue);
           screenConfig[1](newValue);
         }}

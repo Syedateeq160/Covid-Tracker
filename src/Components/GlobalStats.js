@@ -12,8 +12,8 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: 'center',
-  marginTop: 40,
-
+  marginTop: '20px',
+  border: '1px grey',
   color: 'grey',
 
 
@@ -44,7 +44,7 @@ export default function GlobalStats() {
             <Grid item xs={4} key={index}>
               <Item>
 
-                <h3 className="title"
+                <h3 className="title" style={{color:'blue'}}
                 
                 
                 >{val.toUpperCase()}</h3>
